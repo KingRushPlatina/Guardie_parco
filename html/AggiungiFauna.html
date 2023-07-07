@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inserimento nuovo animale</title>
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+  <h1>Inserimento nuovo animale</h1>
+  <button onclick="location.href='../SitoGuardia.php'">Torna Indietro</button>
+  <form method="post" action="../AggiungiFauna.php">
+    <label for="descrizione">Descrizione:</label>
+    <input type="text" name="descrizione" required><br>
+
+    <label for="sesso">Sesso:</label>
+    <select name="sesso">
+      <option value="M">M</option>
+      <option value="F">F</option>
+    </select><br>
+
+    <label for="salute">Salute:</label>
+    <select name="salute">
+      <option value="O">Ottima</option>
+      <option value="B">Buona</option>
+      <option value="C">Critica</option>
+      <option value="P">Pessima</option>
+    </select><br>
+
+    <label for="anzianita">Anzianità:</label>
+    <select name="anzianita">
+      <option value="C">Cucciolo</option>
+      <option value="A">Adulto</option>
+    </select><br>
+
+    <label for="annonascita">Anno di nascita:</label>
+    <input type="number" name="annonascita" required><br>
+
+    <label for="codiceparco">Codice parco:</label>
+    <input type="number" name="codiceparco" required><br>
+
+    <label for="codicespecie">Codice specie:</label>
+    <input type="number" name="codicespecie" required><br>
+
+    <input type="submit" value="Inserisci">
+  </form>
+</body>
+</html>

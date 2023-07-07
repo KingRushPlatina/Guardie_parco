@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Inserimento nuova pianta</title>
+  <link rel="stylesheet" href="../css/form.css">
+</head>
+<body>
+
+<h1>Inserimento nuova pianta</h1>
+<button onclick="location.href='../SitoGuardia.php'">Torna Indietro</button>
+<form method="POST" action="../AggiungiFlora.php">
+  <label for="nome">Nome:</label><br>
+  <input type="text" id="nome" name="nome" required><br>
+
+  <label for="categoria">Categoria:</label><br>
+  <select id="categoria" name="categoria" required>
+    <option value="A">A</option>
+    <option value="B">B</option>
+    <option value="P">P</option>
+  </select><br>
+
+  <label for="stagionefioritura">Stagione di fioritura:</label><br>
+  <select id="stagionefioritura" name="stagionefioritura" required>
+    <option value="I">Inverno</option>
+    <option value="P">Primavera</option>
+    <option value="E">Estate</option>
+    <option value="A">Autunno</option>
+  </select><br>
+
+  <label for="codiceparco">Codice parco:</label><br>
+  <input type="number" id="codiceparco" name="codiceparco" required><br>
+
+  <label for="codicespeciepianta">Codice specie pianta:</label><br>
+  <input type="number" id="codicespeciepianta" name="codicespeciepianta" required><br>
+
+  <br>
+  <input type="submit" value="Inserisci">
+</form>
+
+</body>
+</html>

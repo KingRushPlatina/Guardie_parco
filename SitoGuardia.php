@@ -8,7 +8,7 @@ if ($_SESSION['logged_in'] == false) {
     $servername = 'localhost';
     $username = 'root';
     $password = 'mysql';
-    $dbName = 'Parchi_elouahidi';
+    $dbName = 'Db_name';
 
     try {
 
